@@ -191,15 +191,15 @@ def player_numbers(team_name)
   value1.each do |key2| 
   if key2 == :players
   if key2.each do |key3, value3|
-    if key3 == :points 
+  if key3 == :points 
     a.push (value3)
 end
 end
 end
-a
 end   
 end 
 end
+p a 
 end 
 
   

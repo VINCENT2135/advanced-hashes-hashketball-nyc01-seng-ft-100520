@@ -190,7 +190,7 @@ def player_numbers(team_name)
   game_hash.each do|key1, value1|
   value1.each do |key2| 
   if key2 == :team_name\
-  key2.each do |key3, value3|
+  if key2.each do |key3, value3|
     if ke
     a.push (value3)
 end

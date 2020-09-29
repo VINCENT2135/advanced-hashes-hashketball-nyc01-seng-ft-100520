@@ -199,7 +199,7 @@ end
 end   
 end 
 end
-a(value3) 
+a(:points) 
 end 
 
   

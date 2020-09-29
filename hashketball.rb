@@ -1,3 +1,4 @@
+
 # Write your code below game_hash
 def game_hash
   {
@@ -125,5 +126,83 @@ def game_hash
     }
   }
 end
+
+   def num_points_scored(player_name)
+   game_hash.each do |key1, value1|
+   value1.each do |key2, value2|
+    if key2 == :players
+      value2.each do |key3|
+        if key3[:player_name] == player_name
+        return key3[:points]
+        end
+      end
+    end
+   end
+  end
+ end 
+
+
+
+   
+def shoe_size(player_name)
+  game_hash.each do |key1, value1|
+  value1.each do |key2, value2|
+    if key2 == :players
+        value2.each do |key3|
+          if key3[:player_name] == player_name
+            return key3[:shoe]
+          end
+        end
+    end
+    end
+  end
+
+end
+  
+def team_colors(team_name)
+  game_hash.each do |key1, value1|
+ 
+    value1.each do |key2, value2|
+     
+      if   value2 == team_name
+        return value1[:colors]
+      end
+    end 
+  end
+end 
+  
+
+ def team_names
+  a = []
+  game_hash.each do|key1, value1|
+  value1.each do |key2, value2| 
+    if key2 == :team_name
+    a.push(value2)
+end
+end 
+end 
+a 
+end 
+
+  
+def player_numbers(team_name)
+  a = []
+  game_hash.each do|key1, value1|
+  value1.each do |key2| 
+  if key2 == :team_name
+  key2.each do |key3, value3|
+  if key3 == :number   
+    a.push (value3)
+end
+end
+end
+a
+end   
+end 
+end
+  
+def  player_stats(player_name)
+end
+  
 
 # Write code here

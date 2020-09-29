@@ -188,7 +188,7 @@ end
 def player_numbers(team_name)
   a = []
   game_hash.each do|key1, value1|
-  value1.each do |key2| 
+  value1.each do |key2, value2| 
   if key2 == :team_name
   key2.each do |key3, value3|
   if key3 == :number   

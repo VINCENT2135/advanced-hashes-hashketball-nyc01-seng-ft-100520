@@ -192,7 +192,8 @@ def player_numbers(team_name)
   if key2 == :players
   if key2.each do |key3, value3|
   if key3 == :points 
-  a.push [:points]
+  do
+  a.push (value3)
 end
 end
 end
@@ -201,7 +202,7 @@ end
 end
 a 
 end 
-
+end
   
 def  player_stats(player_name)
 end
